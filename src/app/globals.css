@@ -1,0 +1,221 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+
+    --font-sans: var(--font-instrument), -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Inter", system-ui, sans-serif;
+    --font-matrix: var(--font-matrix), "Share Tech Mono", monospace;
+    --font-orbitron: var(--font-orbitron), "Orbitron", sans-serif;
+    --bg-slate: #000000;
+    --text-dark: #FFFFFF;
+    --brand-orange: #FF5500;
+    --brand-amber: #FFA000;
+  }
+
+  .dark {
+    /* Pure Neutral Dark & Liquid Glass Tokens (Zero Navy Blue) */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 20 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 8%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 20 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14%;
+    --input: 0 0% 14%;
+    --ring: 20 100% 50%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #000000;
+    color: #F5F5F7;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* ─── Lenis Smooth Scrolling Support ─────────────────────────────────────── */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color using Electric Orange */
+::selection {
+  background-color: #FF5500;
+  color: #FFFFFF;
+}
+
+/* ─── Sci-Fi Liquid Glassmorphism & Chamfered Cards (Zero Navy Blue) ──────── */
+.liquid-glass {
+  background: rgba(14, 14, 18, 0.45);
+  backdrop-filter: blur(28px) saturate(190%);
+  -webkit-backdrop-filter: blur(28px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 
+    0 16px 40px -10px rgba(0, 0, 0, 0.85),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.18),
+    inset 0 0 20px 0 rgba(255, 85, 0, 0.03);
+}
+
+.liquid-glass-active,
+.liquid-glass:hover {
+  border-color: rgba(255, 85, 0, 0.6);
+  box-shadow: 
+    0 20px 50px -10px rgba(255, 85, 0, 0.22),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.28),
+    inset 0 0 25px 0 rgba(255, 85, 0, 0.08);
+}
+
+/* Chamfered 45° Faceted Clip-Path (No Rounded Bubbly Corners) */
+.mecha-chamfer {
+  clip-path: polygon(
+    14px 0,
+    calc(100% - 14px) 0,
+    100% 14px,
+    100% calc(100% - 14px),
+    calc(100% - 14px) 100%,
+    14px 100%,
+    0 calc(100% - 14px),
+    0 14px
+  );
+}
+
+.mecha-chamfer-sm {
+  clip-path: polygon(
+    8px 0,
+    calc(100% - 8px) 0,
+    100% 8px,
+    100% calc(100% - 8px),
+    calc(100% - 8px) 100%,
+    8px 100%,
+    0 calc(100% - 8px),
+    0 8px
+  );
+}
+
+.mecha-chamfer-xs {
+  clip-path: polygon(
+    4px 0,
+    calc(100% - 4px) 0,
+    100% 4px,
+    100% calc(100% - 4px),
+    calc(100% - 4px) 100%,
+    4px 100%,
+    0 calc(100% - 4px),
+    0 4px
+  );
+}
+
+/* ─── White Slate Surfaces ─────────────────────────────────────────────────── */
+.slate-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04), 0 2px 6px -1px rgba(15, 23, 42, 0.02);
+}
+
+.slate-card-hover {
+  transition: all 240ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.slate-card-hover:hover {
+  border-color: #8243D9;
+  box-shadow: 0 12px 32px -8px rgba(130, 67, 217, 0.15), 0 4px 12px -2px rgba(15, 23, 42, 0.05);
+  transform: translateY(-2px);
+}
+
+.slate-pill {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 2px 8px -1px rgba(15, 23, 42, 0.06);
+}
+
+/* ─── Brand Purple Accent Surfaces ────────────────────────────────────────── */
+.brand-pill {
+  background: linear-gradient(135deg, #8243D9 0%, #4811BF 100%);
+  color: #FFFFFF;
+  box-shadow: 0 4px 16px -2px rgba(130, 67, 217, 0.35);
+}
+
+/* ─── Interactive Physics ─────────────────────────────────────────────────── */
+.btn-press {
+  transition: transform 120ms cubic-bezier(0.2, 0.8, 0.2, 1), background-color 150ms ease, box-shadow 150ms ease;
+}
+
+.btn-press:active {
+  transform: scale(0.97);
+}
+
+/* ─── Minimal Clean Scrollbars (Obsidian Theme) ────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 85, 0, 0.25);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF5500;
+}
