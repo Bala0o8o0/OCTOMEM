@@ -57,8 +57,12 @@ export default function AccessPassSection() {
               {/* Ticket Top Stamp */}
               <div className="flex items-center justify-between pb-4 border-b border-white/10 mb-6">
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-[#8243D9]/20 border border-[#8243D9]/40 flex items-center justify-center text-[#C084FC]">
-                    <Ticket className="w-4 h-4" />
+                  <div className="w-8 h-8 rounded-lg bg-black/60 border border-[#8243D9]/40 flex items-center justify-center p-1 text-[#C084FC] shadow shadow-purple-500/10">
+                    <img
+                      src="/octomem_logo.png"
+                      alt="OCTOMEM Logo"
+                      className="w-full h-full object-contain filter drop-shadow-[0_0_6px_rgba(168,85,247,0.6)]"
+                    />
                   </div>
                   <div>
                     <span className="text-xs font-mono font-bold tracking-wider text-white uppercase block">

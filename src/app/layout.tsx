@@ -28,11 +28,23 @@ const shareTechMono = Share_Tech_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://octomem.ai"),
   title: "OCTOMEM — Portable AI Conversation Memory Cards",
   description:
     "Preserve your AI conversation context in beautiful, portable PNG memory cards. Load them whenever you want to pick up right where you left off.",
   icons: {
-    icon: "/icon.svg",
+    icon: [
+      { url: "/octomem_logo.png" },
+      { url: "/favicon.ico" },
+    ],
+    shortcut: "/octomem_logo.png",
+    apple: "/octomem_logo.png",
+  },
+  openGraph: {
+    title: "OCTOMEM — Portable AI Conversation Memory Cards",
+    description:
+      "Preserve your AI conversation context in beautiful, portable PNG memory cards.",
+    images: [{ url: "/octomem_logo.png", width: 1306, height: 1213, alt: "OCTOMEM Logo" }],
   },
 };
 

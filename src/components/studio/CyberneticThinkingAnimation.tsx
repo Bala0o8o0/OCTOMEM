@@ -74,23 +74,24 @@ export const CyberneticThinkingAnimation: React.FC<CyberneticThinkingAnimationPr
           className="absolute inset-0.5 border border-[#FF5500]/20 rounded-full border-b-[#FF5500] border-r-transparent pointer-events-none"
         />
 
-        {/* Center Glowing 4-Point Diamond Star */}
-        <motion.svg
+        {/* Center Glowing Logo Insignia */}
+        <motion.div
           animate={{
             scale: [0.85, 1.15, 0.85],
-            rotate: [0, 90, 180, 270, 360],
           }}
           transition={{
-            duration: 4,
+            duration: 2.5,
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="w-3.5 h-3.5 text-[#FF5500] drop-shadow-[0_0_8px_#FF5500] relative z-10"
-          viewBox="0 0 24 24"
-          fill="currentColor"
+          className="w-4 h-4 relative z-10 flex items-center justify-center"
         >
-          <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
-        </motion.svg>
+          <img
+            src="/octomem_logo.png"
+            alt="OCTOBOT"
+            className="w-full h-full object-contain filter drop-shadow-[0_0_8px_#FF5500]"
+          />
+        </motion.div>
       </div>
 
       {/* ── 2. Harmonic Waveform Frequency Nodes (5 fluid rhythmic bars) ── */}

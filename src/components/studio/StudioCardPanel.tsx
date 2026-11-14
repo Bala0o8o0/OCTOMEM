@@ -156,7 +156,11 @@ export const StudioCardPanel: React.FC<StudioCardPanelProps> = ({
       {/* ── Top Header Strip ── */}
       <div className="px-4 py-2.5 border-b border-white/[0.08] bg-[#080808] flex items-center justify-between gap-3 shrink-0 backdrop-blur-md">
         <div className="flex items-center gap-2">
-          <div className="w-1.5 h-1.5 rounded-full bg-[#FF5500] shadow-[0_0_8px_#FF5500] animate-pulse" />
+          <img
+            src="/octomem_logo.png"
+            alt="OCTOMEM"
+            className="w-4 h-4 object-contain filter drop-shadow-[0_0_6px_rgba(255,85,0,0.6)]"
+          />
           <span className="font-orbitron text-[11px] tracking-wider text-white font-bold">
             MEMORY CARTRIDGE
           </span>

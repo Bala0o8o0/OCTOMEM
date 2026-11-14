@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useRef, useState } from "react";
 import Link from "next/link";
@@ -57,31 +57,47 @@ export default function HeroSection() {
         className="relative z-10 w-full max-w-[1380px] mx-auto px-5 sm:px-8 lg:px-12 flex-1 flex flex-col justify-between h-full"
       >
         {/* ══════════════════════════════════════════════════════════════════
-            TOP RIGHT: TELEMETRY BADGES (Moved Down With Generous Spacing)
+            TOP: SPLIT HEADER — SYSTEM LABEL LEFT / STATUS BADGES RIGHT
            ══════════════════════════════════════════════════════════════════ */}
-        <div className="w-full flex justify-end z-20 pt-3 sm:pt-4 lg:pt-6">
-          <div className="flex flex-col items-end gap-1.5 text-xs font-matrix select-none">
-            {/* Row 1 */}
+        <div className="w-full flex items-start justify-between z-20 pt-3 sm:pt-4 lg:pt-6">
+
+          {/* Left: System label */}
+          <div className="flex flex-col gap-1 select-none">
             <div className="flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#FF5500] animate-pulse shadow-[0_0_8px_#FF5500]" />
-              <span className="text-neutral-400 text-[11px] sm:text-[11.5px] tracking-wider">
+              <span className="font-matrix text-[9px] sm:text-[10px] text-neutral-700 tracking-[0.3em] uppercase">
+                MEM / SYS / 01
+              </span>
+              <span className="w-10 sm:w-16 h-px bg-gradient-to-r from-[#FF5500]/30 to-transparent" />
+            </div>
+            <div className="font-matrix text-[8.5px] text-neutral-700 tracking-widest uppercase">
+              PERSONAL AI ARCHIVE — ACTIVE
+            </div>
+          </div>
+
+          {/* Right: Status badges */}
+          <div className="flex flex-col items-end gap-2 select-none">
+            {/* Badge 1 — Privacy status */}
+            <div
+              className="inline-flex items-center gap-2 px-2.5 py-1 border border-[#FF5500]/20 bg-[#FF5500]/[0.05] backdrop-blur-sm"
+              style={{ clipPath: "polygon(4px 0,calc(100% - 4px) 0,100% 4px,100% calc(100% - 4px),calc(100% - 4px) 100%,4px 100%,0 calc(100% - 4px),0 4px)" }}
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#FF5500] animate-pulse shadow-[0_0_6px_#FF5500]" />
+              <span className="font-matrix text-[10px] sm:text-[10.5px] text-[#FF5500] tracking-widest font-medium">
                 ZERO CLOUD RETENTION
               </span>
-              <span className="text-neutral-600">•</span>
-              <span className="text-[#FF5500] font-medium text-[11px] sm:text-[11.5px] tracking-wide">
+              <span className="hidden sm:inline font-matrix text-[9px] text-neutral-700">◆</span>
+              <span className="hidden sm:inline font-matrix text-[10px] text-neutral-400 tracking-wider">
                 YOUR MEMORIES STAY YOURS
               </span>
             </div>
 
-            {/* Row 2 */}
-            <div className="flex items-center gap-2 text-[10px] sm:text-[10.5px] text-neutral-500 tracking-widest">
+            {/* Badge 2 — Feature tags */}
+            <div className="flex items-center gap-2 font-matrix text-[9px] sm:text-[9.5px] text-neutral-600 tracking-widest uppercase">
               <span>STANDALONE PNG</span>
-              <span className="text-neutral-600">•</span>
+              <span className="text-neutral-700">◆</span>
               <span>ZERO CLOUD LOCK-IN</span>
-              <span className="text-neutral-600">•</span>
-              <span className="text-[#FF5500] font-medium">
-                DRAG & DROP RELOAD
-              </span>
+              <span className="text-neutral-700">◆</span>
+              <span className="text-[#FF5500]/60 font-medium">DRAG & DROP RELOAD</span>
             </div>
           </div>
         </div>
@@ -127,7 +143,11 @@ export default function HeroSection() {
                   "polygon(5px 0, calc(100% - 5px) 0, 100% 5px, 100% calc(100% - 5px), calc(100% - 5px) 100%, 5px 100%, 0 calc(100% - 5px), 0 5px)",
               }}
             >
-              <span className="w-1.5 h-1.5 rounded-full bg-[#FF5500] animate-pulse shadow-[0_0_8px_#FF5500]" />
+              <img
+                src="/octomem_logo.png"
+                alt="OCTOMEM"
+                className="w-3.5 h-3.5 object-contain filter drop-shadow-[0_0_6px_rgba(255,85,0,0.6)]"
+              />
               <ShinyText
                 text="OCTOMEM"
                 className="font-matrix text-[11px] sm:text-[11.5px] tracking-wider text-neutral-200"
@@ -139,7 +159,7 @@ export default function HeroSection() {
             {/* ScrambledText Headline (All 3 lines in electric orange, larger scale) */}
             <ScrambledText
               as="h1"
-              className="text-3xl sm:text-4xl lg:text-[2.65rem] xl:text-[3.15rem] font-semibold tracking-tight text-[#FF5500] leading-[1.2] mb-2.5 sm:mb-3.5 font-sans drop-shadow-[0_0_28px_rgba(255,85,0,0.25)]"
+              className="text-3xl sm:text-3xl lg:text-[2.65rem] xl:text-[3.15rem]   font-semibold tracking-tight text-[#FF5500] leading-[1.45] mb-2.5 sm:mb-3.5 font-sans drop-shadow-[0_0_28px_rgba(255,85,0,0.25)]"
               duration={1.2}
             >
               Your AI Conversations, Saved Forever.
@@ -187,9 +207,16 @@ export default function HeroSection() {
                 <HolographicCard className="p-3.5 sm:p-4 w-full sm:w-[300px] xl:w-[330px]">
                   {/* Top Bracket Header */}
                   <div className="flex items-center justify-between mb-2">
-                    <span className="font-matrix text-[11px] sm:text-[11.5px] font-semibold text-[#FF5500] tracking-wider uppercase">
-                      About OCTOMEM
-                    </span>
+                    <div className="flex items-center gap-1.5">
+                      <img
+                        src="/octomem_logo.png"
+                        alt="OCTOMEM"
+                        className="w-3.5 h-3.5 object-contain filter drop-shadow-[0_0_6px_rgba(255,85,0,0.5)]"
+                      />
+                      <span className="font-matrix text-[11px] sm:text-[11.5px] font-semibold text-[#FF5500] tracking-wider uppercase">
+                        About OCTOMEM
+                      </span>
+                    </div>
                   </div>
 
                   {/* Body Paragraph */}

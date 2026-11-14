@@ -33,19 +33,26 @@ export default function LoginPage() {
         </div>
 
         {/* Brand mark */}
-        <Link href="/" className="absolute top-8 left-8 flex items-center gap-2.5 z-10">
-          <div className="w-8 h-8 rounded-lg bg-brand-pink flex items-center justify-center shadow-lg shadow-brand-pink/40">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <circle cx="8" cy="5" r="3" fill="white" fillOpacity="0.9" />
-              <path d="M2 13c0-3.314 2.686-6 6-6s6 2.686 6 6" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeOpacity="0.9" />
-            </svg>
+        <Link href="/" className="absolute top-8 left-8 flex items-center gap-2.5 z-10 group">
+          <div className="w-8 h-8 rounded-lg bg-black/60 border border-white/10 flex items-center justify-center p-1 shadow-lg shadow-orange-500/20 group-hover:scale-105 transition-transform">
+            <img
+              src="/octomem_logo.png"
+              alt="OCTOMEM Logo"
+              className="w-full h-full object-contain filter drop-shadow-[0_0_8px_rgba(255,85,0,0.5)]"
+            />
           </div>
-          <span className="text-white font-semibold text-sm">OCTOMEM <span className="text-brand-pink">AI</span></span>
+          <span className="text-white font-semibold text-sm font-orbitron tracking-wider">OCTOMEM <span className="text-[#FF5500]">AI</span></span>
         </Link>
 
         {/* Central content */}
         <div className="relative z-10 text-center max-w-lg">
-          <div className="text-8xl mb-8">🐙</div>
+          <div className="w-24 h-24 mx-auto mb-8 flex items-center justify-center">
+            <img
+              src="/octomem_logo.png"
+              alt="OCTOMEM Logo"
+              className="w-full h-full object-contain filter drop-shadow-[0_0_28px_rgba(255,85,0,0.5)] hover:scale-105 transition-transform duration-300"
+            />
+          </div>
           <h2 className="text-4xl font-bold text-white tracking-tight mb-4">
             Welcome back to the
             <br />
@@ -74,14 +81,15 @@ export default function LoginPage() {
       {/* ── Right panel — form ────────────────────────────────────────────── */}
       <div className="flex-1 lg:max-w-md xl:max-w-lg flex flex-col justify-center px-8 sm:px-12 lg:px-16 relative">
         {/* Mobile logo */}
-        <Link href="/" className="flex lg:hidden items-center gap-2.5 mb-10">
-          <div className="w-8 h-8 rounded-lg bg-brand-pink flex items-center justify-center">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <circle cx="8" cy="5" r="3" fill="white" fillOpacity="0.9" />
-              <path d="M2 13c0-3.314 2.686-6 6-6s6 2.686 6 6" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeOpacity="0.9" />
-            </svg>
+        <Link href="/" className="flex lg:hidden items-center gap-2.5 mb-10 group">
+          <div className="w-8 h-8 rounded-lg bg-black/60 border border-white/10 flex items-center justify-center p-1 shadow-lg shadow-orange-500/20 group-hover:scale-105 transition-transform">
+            <img
+              src="/octomem_logo.png"
+              alt="OCTOMEM Logo"
+              className="w-full h-full object-contain filter drop-shadow-[0_0_8px_rgba(255,85,0,0.5)]"
+            />
           </div>
-          <span className="text-white font-semibold text-sm">OCTOMEM <span className="text-brand-pink">AI</span></span>
+          <span className="text-white font-semibold text-sm font-orbitron tracking-wider">OCTOMEM <span className="text-[#FF5500]">AI</span></span>
         </Link>
 
         <div>

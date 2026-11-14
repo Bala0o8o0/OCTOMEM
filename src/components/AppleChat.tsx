@@ -54,8 +54,12 @@ export const AppleChat: React.FC<AppleChatProps> = ({
               <img src={customCoverUrl} alt="Card Cover" className="w-full h-full object-cover" />
             </div>
           ) : (
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-apple-blue to-purple-600 flex items-center justify-center text-white shrink-0 shadow">
-              <Sparkles className="w-4 h-4 text-white" />
+            <div className="w-9 h-9 rounded-xl bg-black/60 border border-white/10 flex items-center justify-center p-1.5 shrink-0 shadow shadow-orange-500/10">
+              <img
+                src="/octomem_logo.png"
+                alt="OCTOMEM Logo"
+                className="w-full h-full object-contain filter drop-shadow-[0_0_6px_rgba(255,85,0,0.5)]"
+              />
             </div>
           )}
 

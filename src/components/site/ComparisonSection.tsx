@@ -83,8 +83,12 @@ export default function ComparisonSection() {
             <div className="col-span-4 text-red-400 flex items-center gap-1.5">
               <span>REGULAR AI CHAT</span>
             </div>
-            <div className="col-span-4 text-[#FF5500] flex items-center gap-1.5 font-bold">
-              <span className="w-2 h-2 rounded-full bg-[#FF5500] shadow-[0_0_8px_#FF5500]" />
+            <div className="col-span-4 text-[#FF5500] flex items-center gap-2 font-bold">
+              <img
+                src="/octomem_logo.png"
+                alt="OCTOMEM"
+                className="w-4 h-4 object-contain filter drop-shadow-[0_0_6px_rgba(255,85,0,0.6)]"
+              />
               <span>OCTOMEM MEMORY CARDS</span>
             </div>
           </div>

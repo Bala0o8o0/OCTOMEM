@@ -33,11 +33,18 @@ export const PassphraseModal: React.FC<PassphraseModalProps> = ({
         {/* Header */}
         <div className="flex items-center justify-between pb-3 border-b border-apple-border">
           <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-xl bg-apple-green/20 text-apple-green flex items-center justify-center border border-apple-green/30">
-              <Lock className="w-4 h-4" />
+            <div className="relative w-8 h-8 rounded-xl bg-black/60 border border-white/10 flex items-center justify-center p-1.5 shadow">
+              <img
+                src="/octomem_logo.png"
+                alt="OCTOMEM Logo"
+                className="w-full h-full object-contain filter drop-shadow-[0_0_6px_rgba(255,85,0,0.5)]"
+              />
+              <span className="absolute -bottom-1 -right-1 bg-black p-0.5 border border-apple-green/60 rounded-full">
+                <Lock className="w-2 h-2 text-apple-green" />
+              </span>
             </div>
             <div>
-              <h3 className="font-semibold text-sm sm:text-base text-white">Unlock ChronoCard</h3>
+              <h3 className="font-semibold text-sm sm:text-base text-white">Unlock OCTOMEM Card</h3>
               <p className="text-[11px] text-apple-subtext">AES-256-GCM Encrypted</p>
             </div>
           </div>

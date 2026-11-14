@@ -39,14 +39,11 @@ export const StudioNavbar: React.FC<StudioNavbarProps> = ({
         {/* Left: Brand & Station Identity */}
         <div className="flex items-center gap-3 sm:gap-5">
           <Link href="/" className="flex items-center gap-2.5 group">
-            {/* 4-Point Electric Orange Star */}
-            <svg
-              className="w-5 h-5 text-[#FF5500] transform group-hover:rotate-45 transition-transform duration-300 shadow-[0_0_12px_#FF5500]"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
-              <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
-            </svg>
+            <img
+              src="/octomem_logo.png"
+              alt="OCTOMEM Logo"
+              className="w-7 h-7 sm:w-8 sm:h-8 object-contain filter drop-shadow-[0_0_12px_rgba(255,85,0,0.5)] group-hover:scale-105 transition-transform duration-300"
+            />
             <span className="text-white font-medium text-base sm:text-lg tracking-wider font-orbitron">
               OCTOMEM
             </span>

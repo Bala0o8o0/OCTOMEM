@@ -33,16 +33,15 @@ export const Sidebar: React.FC<SidebarProps> = ({
       <div className="space-y-5">
         {/* Logo */}
         <div className="flex items-center gap-3 px-2 pt-1">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-chrono-pink to-purple-600 p-0.5 flex items-center justify-center shadow-pinkSm">
-            <div className="w-full h-full bg-[#0E0A18] rounded-[10px] flex items-center justify-center">
-              {/* Hexagon C Icon */}
-              <svg viewBox="0 0 24 24" className="w-5 h-5 text-chrono-pink fill-current">
-                <path d="M12 2L3 7v10l9 5 9-5V7l-9-5zm0 3.2L18.5 8 12 11.8 5.5 8 12 5.2zM5 9.7l6 3.5v6.5l-6-3.3V9.7zm8 10v-6.5l6-3.5v6.7l-6 3.3z" />
-              </svg>
-            </div>
+          <div className="w-9 h-9 rounded-xl bg-black/60 border border-white/10 p-1 flex items-center justify-center shadow-lg shadow-orange-500/10">
+            <img
+              src="/octomem_logo.png"
+              alt="OCTOMEM Logo"
+              className="w-full h-full object-contain filter drop-shadow-[0_0_8px_rgba(255,85,0,0.5)]"
+            />
           </div>
           <div>
-            <h1 className="font-bold text-sm tracking-wider text-white">CHRONOCARD AI</h1>
+            <h1 className="font-bold text-sm tracking-wider text-white">OCTOMEM AI</h1>
             <p className="text-[10px] tracking-widest uppercase text-chrono-muted font-medium">
               MEMORY LIVES IN CARDS
             </p>

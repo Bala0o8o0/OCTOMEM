@@ -61,8 +61,12 @@ export default function PricingSection() {
             {/* Top Pass Telemetry Bar (No '//') */}
             <div className="flex items-center justify-between pb-6 border-b border-white/[0.08] mb-8 font-matrix pr-14">
               <div className="flex items-center gap-3">
-                <div className="w-9 h-9 bg-[#FF5500]/15 border border-[#FF5500]/30 flex items-center justify-center text-[#FF5500]">
-                  <Ticket className="w-4 h-4" />
+                <div className="w-9 h-9 bg-black/60 border border-[#FF5500]/30 flex items-center justify-center p-1.5 shadow shadow-orange-500/10">
+                  <img
+                    src="/octomem_logo.png"
+                    alt="OCTOMEM Logo"
+                    className="w-full h-full object-contain filter drop-shadow-[0_0_6px_rgba(255,85,0,0.5)]"
+                  />
                 </div>
                 <div>
                   <span className="text-[10px] text-neutral-400 uppercase tracking-widest block font-matrix">ACCESS PLAN</span>

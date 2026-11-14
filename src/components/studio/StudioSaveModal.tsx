@@ -121,8 +121,12 @@ export const StudioSaveModal: React.FC<StudioSaveModalProps> = ({
         {/* ── Modal Header ── */}
         <div className="flex items-center justify-between pb-4 border-b border-white/[0.08] relative z-10">
           <div className="flex items-center gap-3.5">
-            <div className="w-9 h-9 bg-[#0D0D0D] border border-white/[0.12] flex items-center justify-center text-[#FF5500] shadow-[0_0_15px_rgba(255,85,0,0.25)]">
-              <Download className="w-4 h-4 stroke-[2.5]" />
+            <div className="w-9 h-9 bg-[#0D0D0D] border border-white/[0.12] flex items-center justify-center p-1.5 shadow-[0_0_15px_rgba(255,85,0,0.25)]">
+              <img
+                src="/octomem_logo.png"
+                alt="OCTOMEM Logo"
+                className="w-full h-full object-contain filter drop-shadow-[0_0_6px_rgba(255,85,0,0.5)]"
+              />
             </div>
             <div>
               <h3 className="font-orbitron font-semibold text-base sm:text-lg text-white tracking-wide">
@@ -155,8 +159,9 @@ export const StudioSaveModal: React.FC<StudioSaveModalProps> = ({
               />
 
               {/* Tag overlay */}
-              <div className="absolute top-2.5 left-2.5 px-2 py-0.5 bg-[#080808]/90 border border-white/10 text-[9px] font-orbitron text-neutral-300 uppercase tracking-widest backdrop-blur-sm">
-                {customCoverUrl ? "CUSTOM ART" : "OCTOMEM v1"}
+              <div className="absolute top-2.5 left-2.5 px-2 py-0.5 bg-[#080808]/90 border border-white/10 text-[9px] font-orbitron text-neutral-300 uppercase tracking-widest backdrop-blur-sm flex items-center gap-1.5">
+                <img src="/octomem_logo.png" alt="OCTOMEM" className="w-3 h-3 object-contain" />
+                <span>{customCoverUrl ? "CUSTOM ART" : "OCTOMEM v1"}</span>
               </div>
             </div>
 

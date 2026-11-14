@@ -51,12 +51,16 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
         {/* Header */}
         <div className="flex items-center justify-between pb-3 border-b border-apple-border">
           <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-xl bg-apple-blue flex items-center justify-center text-white">
-              <Sliders className="w-4 h-4" />
+            <div className="w-8 h-8 rounded-xl bg-black/60 border border-white/10 flex items-center justify-center p-1.5 shadow shadow-orange-500/10">
+              <img
+                src="/octomem_logo.png"
+                alt="OCTOMEM Logo"
+                className="w-full h-full object-contain filter drop-shadow-[0_0_6px_rgba(255,85,0,0.5)]"
+              />
             </div>
             <div>
-              <h3 className="font-semibold text-sm sm:text-base text-white">Cloud AI Settings</h3>
-              <p className="text-[11px] text-apple-subtext">100% online cloud free providers</p>
+              <h3 className="font-semibold text-sm sm:text-base text-white">AI Provider Settings</h3>
+              <p className="text-[11px] text-apple-subtext">Direct browser inference settings</p>
             </div>
           </div>
           <button

@@ -22,13 +22,17 @@ export const Header: React.FC<HeaderProps> = ({
     <header className="sticky top-0 z-40 w-full px-4 sm:px-8 py-3.5 apple-glass border-b border-apple-border flex items-center justify-between gap-4">
       {/* Brand & Identity */}
       <div className="flex items-center gap-3">
-        <div className="w-9 h-9 rounded-2xl bg-gradient-to-tr from-apple-blue via-indigo-500 to-purple-600 flex items-center justify-center text-white shadow-lg shadow-apple-blue/20">
-          <Sparkles className="w-4 h-4 text-white" />
+        <div className="w-9 h-9 rounded-2xl bg-black/60 border border-white/10 flex items-center justify-center p-1.5 shadow-lg shadow-orange-500/10">
+          <img
+            src="/octomem_logo.png"
+            alt="OCTOMEM Logo"
+            className="w-full h-full object-contain filter drop-shadow-[0_0_8px_rgba(255,85,0,0.5)]"
+          />
         </div>
         <div>
           <div className="flex items-center gap-2">
             <span className="font-semibold text-sm sm:text-base tracking-tight text-white">
-              ChronoCard AI
+              OCTOMEM AI
             </span>
             <span className="text-[11px] px-2 py-0.5 rounded-full bg-white/10 text-apple-subtext font-medium border border-white/5">
               v2.1

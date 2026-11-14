@@ -137,6 +137,11 @@ export default function ConceptSection() {
                 <span className="w-2.5 h-2.5 rounded-full bg-amber-500/80" />
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-500/80" />
               </div>
+              <img
+                src="/octomem_logo.png"
+                alt="OCTOMEM Logo"
+                className="w-4 h-4 object-contain filter drop-shadow-[0_0_6px_rgba(255,85,0,0.5)]"
+              />
               <span className="text-xs font-mono font-bold tracking-wider uppercase text-neutral-300">
                 OCTOMEM 4-LAYER STEGANOGRAPHIC STACK
               </span>

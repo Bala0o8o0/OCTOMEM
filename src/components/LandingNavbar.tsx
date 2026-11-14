@@ -32,11 +32,13 @@ export default function LandingNavbar() {
         >
           {/* Brand Emblem & Identity */}
           <Link href="/" className="flex items-center gap-3 group select-none">
-            {/* Sentinel Core Icon */}
-            <div className="relative w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-gradient-to-tr from-[#160e26] via-[#2d1254] to-[#8243D9] p-[1px] shadow-[0_0_15px_rgba(130,67,217,0.4)] group-hover:shadow-[0_0_22px_rgba(168,85,247,0.7)] transition-all duration-300">
-              <div className="w-full h-full rounded-[7px] bg-[#0A0815] flex items-center justify-center">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#A855F7] animate-pulse shadow-[0_0_8px_#A855F7]" />
-              </div>
+            {/* Sentinel Core Icon with Logo */}
+            <div className="relative w-8 h-8 rounded-lg p-0.5 flex items-center justify-center">
+              <img
+                src="/octomem_logo.png"
+                alt="OCTOMEM Logo"
+                className="w-full h-full object-contain filter drop-shadow-[0_0_12px_rgba(168,85,247,0.7)] group-hover:scale-110 transition-transform duration-300"
+              />
             </div>
 
             <div className="flex flex-col">

@@ -42,8 +42,15 @@ export const StudioPassphraseModal: React.FC<StudioPassphraseModalProps> = ({
         {/* ── Modal Header ── */}
         <div className="flex items-center justify-between pb-4 border-b border-white/[0.08] relative z-10">
           <div className="flex items-center gap-3.5">
-            <div className="w-10 h-10 bg-[#0D0D0D] border border-white/[0.12] flex items-center justify-center text-[#FF5500] shadow-[0_0_15px_rgba(255,85,0,0.25)]">
-              <Lock className="w-4 h-4 stroke-[2.2]" />
+            <div className="relative w-10 h-10 bg-[#0D0D0D] border border-white/[0.12] flex items-center justify-center p-2 shadow-[0_0_15px_rgba(255,85,0,0.25)]">
+              <img
+                src="/octomem_logo.png"
+                alt="OCTOMEM Logo"
+                className="w-full h-full object-contain filter drop-shadow-[0_0_6px_rgba(255,85,0,0.5)]"
+              />
+              <span className="absolute -bottom-1 -right-1 bg-black p-0.5 border border-[#FF5500]/60 rounded-full">
+                <Lock className="w-2.5 h-2.5 text-[#FF5500]" />
+              </span>
             </div>
             <div>
               <h3 className="font-orbitron font-semibold text-base sm:text-lg text-white tracking-wide">

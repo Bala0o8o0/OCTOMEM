@@ -145,7 +145,12 @@ export const CompanionPanel: React.FC<CompanionPanelProps> = ({
 
         {/* Subtle Watermark */}
         <div className="flex items-center justify-end gap-1.5 pt-1 text-[10px] font-bold tracking-widest text-white/30 uppercase">
-          <span>CHRONOCARD AI</span>
+          <img
+            src="/octomem_logo.png"
+            alt="OCTOMEM"
+            className="w-3.5 h-3.5 object-contain opacity-40"
+          />
+          <span>OCTOMEM AI</span>
         </div>
       </div>
     </aside>

@@ -3,6 +3,14 @@ import Link from "next/link";
 export default function NotFound() {
   return (
     <div className="min-h-screen bg-[#000000] text-[#EDEDF0] flex flex-col items-center justify-center p-6 text-center select-none font-matrix">
+      <Link href="/" className="mb-6 flex flex-col items-center gap-2 group">
+        <img
+          src="/octomem_logo.png"
+          alt="OCTOMEM Logo"
+          className="w-16 h-16 object-contain filter drop-shadow-[0_0_20px_rgba(255,85,0,0.4)] group-hover:scale-105 transition-transform"
+        />
+        <span className="font-orbitron font-semibold text-base tracking-widest text-white">OCTOMEM</span>
+      </Link>
       <div className="w-12 h-12 bg-[#0D0D0D] border border-white/[0.12] flex items-center justify-center text-[#FF5500] font-semibold text-lg mb-4 font-orbitron">
         404
       </div>

@@ -241,12 +241,16 @@ export const GenerativeUICard: React.FC<GenerativeUICardProps> = ({
 
         <div className="flex items-center justify-between pb-2 border-b border-white/[0.08]">
           <div className="flex items-center gap-2.5">
-            <div className="w-7 h-7 bg-[#0D0D0D] border border-white/[0.12] flex items-center justify-center text-[#FF5500]">
-              <ShieldCheck className="w-3.5 h-3.5" />
+            <div className="w-7 h-7 bg-[#0D0D0D] border border-white/[0.12] flex items-center justify-center p-1">
+              <img
+                src="/octomem_logo.png"
+                alt="OCTOMEM"
+                className="w-full h-full object-contain filter drop-shadow-[0_0_6px_rgba(255,85,0,0.5)]"
+              />
             </div>
             <div>
               <span className="font-orbitron font-semibold text-[11px] tracking-wider text-white">
-                CHRONOCARD TELEMETRY
+                OCTOMEM TELEMETRY
               </span>
               <p className="text-[10px] text-neutral-400 font-mono">
                 {result?.stegoFormat || "ISO/IEC 15948:2004 PNG chunk"}

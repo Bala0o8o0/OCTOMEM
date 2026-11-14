@@ -17,15 +17,13 @@ export default function CtaBanner() {
 
       <div className="max-w-[1200px] mx-auto px-6 sm:px-10 lg:px-12 relative z-10 text-center">
         <HolographicCard glyphVariant={2} className="p-10 sm:p-16 relative overflow-hidden text-center">
-          {/* Top Star Emblem in Orange */}
-          <div className="w-12 h-12 bg-[#0D0D0D] border border-white/[0.12] mx-auto mb-6 flex items-center justify-center">
-            <svg
-              className="w-6 h-6 text-[#FF5500]"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
-              <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
-            </svg>
+          {/* Top Logo Emblem */}
+          <div className="w-16 h-16 bg-[#0D0D0D] border border-white/[0.12] mx-auto mb-6 flex items-center justify-center p-2.5 shadow-[0_0_24px_rgba(255,85,0,0.3)] hover:scale-105 transition-transform duration-300">
+            <img
+              src="/octomem_logo.png"
+              alt="OCTOMEM Logo"
+              className="w-full h-full object-contain filter drop-shadow-[0_0_12px_rgba(255,85,0,0.6)]"
+            />
           </div>
 
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#080808] border border-white/[0.12] text-xs mb-5">

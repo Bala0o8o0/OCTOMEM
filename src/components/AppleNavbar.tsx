@@ -23,8 +23,12 @@ export const AppleNavbar: React.FC<AppleNavbarProps> = ({
       <nav className="glass-pill px-4 sm:px-6 py-3 rounded-full flex items-center justify-between gap-4 transition-all duration-300">
         {/* Brand / Logo */}
         <div className="flex items-center gap-2.5">
-          <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-apple-blue via-indigo-500 to-apple-pink flex items-center justify-center text-white shadow-md shadow-apple-blueGlow">
-            <Sparkles className="w-4 h-4 text-white" />
+          <div className="w-8 h-8 rounded-full bg-black/60 border border-white/15 flex items-center justify-center p-1 shadow-md shadow-orange-500/20">
+            <img
+              src="/octomem_logo.png"
+              alt="OCTOMEM Logo"
+              className="w-full h-full object-contain filter drop-shadow-[0_0_6px_rgba(255,85,0,0.5)]"
+            />
           </div>
           <div>
             <span className="font-semibold text-sm tracking-tight text-white flex items-center gap-1.5">

@@ -59,8 +59,12 @@ export const ChatArea: React.FC<ChatAreaProps> = ({
       <header className="px-5 py-3.5 border-b border-white/5 flex items-center justify-between bg-[#0E0A18]/90 backdrop-blur-md shrink-0">
         <div className="flex items-center gap-3">
           <div className="w-9 h-9 rounded-full bg-gradient-to-tr from-chrono-pink to-purple-600 p-0.5 shadow-pinkSm shrink-0">
-            <div className="w-full h-full bg-[#120B20] rounded-full flex items-center justify-center text-sm">
-              🐙
+            <div className="w-full h-full bg-[#120B20] rounded-full flex items-center justify-center p-1.5">
+              <img
+                src="/octomem_logo.png"
+                alt="OCTOMEM"
+                className="w-full h-full object-contain filter drop-shadow-[0_0_6px_rgba(255,85,0,0.5)]"
+              />
             </div>
           </div>
           <div>
@@ -114,8 +118,12 @@ export const ChatArea: React.FC<ChatAreaProps> = ({
                 </div>
               ) : (
                 <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-chrono-pink to-purple-600 p-0.5 shrink-0 mt-0.5 shadow-pinkSm">
-                  <div className="w-full h-full bg-[#120B20] rounded-full flex items-center justify-center text-xs">
-                    🐙
+                  <div className="w-full h-full bg-[#120B20] rounded-full flex items-center justify-center p-1">
+                    <img
+                      src="/octomem_logo.png"
+                      alt="OCTOMEM"
+                      className="w-full h-full object-contain filter drop-shadow-[0_0_6px_rgba(255,85,0,0.5)]"
+                    />
                   </div>
                 </div>
               )}

@@ -114,8 +114,12 @@ export const AppleSaveModal: React.FC<AppleSaveModalProps> = ({
                 <img src={customCoverUrl} alt="Cover Preview" className="w-full h-full object-cover" />
               </div>
             ) : (
-              <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-apple-subtext shrink-0">
-                <ImageIcon className="w-5 h-5 text-apple-blue" />
+              <div className="w-12 h-12 rounded-xl bg-black/60 border border-white/10 flex items-center justify-center p-2 shrink-0 shadow-md shadow-orange-500/10">
+                <img
+                  src="/octomem_logo.png"
+                  alt="OCTOMEM Logo"
+                  className="w-full h-full object-contain filter drop-shadow-[0_0_6px_rgba(255,85,0,0.5)]"
+                />
               </div>
             )}
             <div>

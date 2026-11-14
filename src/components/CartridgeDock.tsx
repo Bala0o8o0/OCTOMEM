@@ -122,8 +122,12 @@ export const CartridgeDock: React.FC<CartridgeDockProps> = ({
                 />
               </div>
             ) : (
-              <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-apple-blue to-purple-600 flex items-center justify-center text-white shrink-0 shadow-md">
-                <HardDrive className="w-5 h-5 text-white" />
+              <div className="w-12 h-12 rounded-2xl bg-black/60 border border-white/10 flex items-center justify-center p-2 shrink-0 shadow-md shadow-orange-500/10">
+                <img
+                  src="/octomem_logo.png"
+                  alt="OCTOMEM Logo"
+                  className="w-full h-full object-contain filter drop-shadow-[0_0_6px_rgba(255,85,0,0.5)]"
+                />
               </div>
             )}
 

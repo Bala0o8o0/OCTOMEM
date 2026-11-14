@@ -10,7 +10,11 @@ export default function Footer() {
         {/* Brand Identity & Protocol Spec */}
         <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
           <Link href="/" className="flex items-center gap-2 group">
-            <span className="w-2.5 h-2.5 rounded-full bg-[#A855F7] shadow-[0_0_8px_#A855F7] group-hover:scale-125 transition-transform" />
+            <img
+              src="/octomem_logo.png"
+              alt="OCTOMEM Logo"
+              className="w-5 h-5 object-contain filter drop-shadow-[0_0_8px_rgba(168,85,247,0.6)] group-hover:scale-110 transition-transform"
+            />
             <span className="font-bold text-white text-sm tracking-wider font-mono">
               OCTOMEM
             </span>

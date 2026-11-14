@@ -50,9 +50,18 @@ export const AppleSettingsModal: React.FC<AppleSettingsModalProps> = ({
       <div className="w-full max-w-md rounded-3xl glass-panel p-6 shadow-2xl relative space-y-5 animate-in zoom-in-95 duration-200">
         {/* Header */}
         <div className="flex items-center justify-between pb-3 border-b border-white/10">
-          <div>
-            <h3 className="font-semibold text-base text-white">AI Provider Settings</h3>
-            <p className="text-xs text-apple-subtext">100% online cloud free providers</p>
+          <div className="flex items-center gap-2.5">
+            <div className="w-8 h-8 rounded-xl bg-black/60 border border-white/10 flex items-center justify-center p-1.5 shadow shadow-orange-500/10">
+              <img
+                src="/octomem_logo.png"
+                alt="OCTOMEM Logo"
+                className="w-full h-full object-contain filter drop-shadow-[0_0_6px_rgba(255,85,0,0.5)]"
+              />
+            </div>
+            <div>
+              <h3 className="font-semibold text-base text-white">AI Provider Settings</h3>
+              <p className="text-xs text-apple-subtext">Direct browser inference settings</p>
+            </div>
           </div>
           <button
             onClick={onClose}

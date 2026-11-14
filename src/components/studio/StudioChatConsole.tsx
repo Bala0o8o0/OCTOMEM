@@ -236,15 +236,13 @@ export const StudioChatConsole: React.FC<StudioChatConsoleProps> = ({
           {messages.length === 0 ? (
             /* ── DroneOS Minimal Landing (Crisp & Compact) ── */
             <div className="min-h-[38vh] flex flex-col justify-center items-center text-center py-8 sm:py-14 select-none">
-              {/* Electric Orange Star Insignia */}
-              <div className="w-10 h-10 bg-[#080808] border border-white/[0.12] flex items-center justify-center text-[#FF5500] shadow-[0_0_20px_rgba(255,85,0,0.2)] mb-4 relative">
-                <svg
-                  className="w-5 h-5 text-[#FF5500]"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
-                </svg>
+              {/* OCTOMEM Logo Insignia */}
+              <div className="w-14 h-14 bg-[#080808] border border-white/[0.12] flex items-center justify-center p-2.5 shadow-[0_0_24px_rgba(255,85,0,0.3)] mb-4 relative hover:scale-105 transition-transform duration-300">
+                <img
+                  src="/octomem_logo.png"
+                  alt="OCTOMEM Logo"
+                  className="w-full h-full object-contain filter drop-shadow-[0_0_10px_rgba(255,85,0,0.6)]"
+                />
               </div>
 
               <h1 className="text-2xl sm:text-[28px] font-orbitron font-bold text-white tracking-wide mb-2">
@@ -396,14 +394,12 @@ export const StudioChatConsole: React.FC<StudioChatConsoleProps> = ({
               /* Assistant Message */
               return (
                 <div key={m.id} className="flex gap-2.5 sm:gap-3 items-start max-w-full group">
-                  <div className="w-7 h-7 bg-[#080808] border border-white/[0.12] flex items-center justify-center text-[#FF5500] shrink-0 mt-0.5 shadow-[0_0_10px_rgba(255,85,0,0.2)]">
-                    <svg
-                      className="w-3.5 h-3.5 text-[#FF5500]"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
-                    </svg>
+                  <div className="w-7 h-7 bg-[#080808] border border-white/[0.12] flex items-center justify-center p-1 shrink-0 mt-0.5 shadow-[0_0_10px_rgba(255,85,0,0.25)]">
+                    <img
+                      src="/octomem_logo.png"
+                      alt="OCTOBOT"
+                      className="w-full h-full object-contain filter drop-shadow-[0_0_6px_rgba(255,85,0,0.5)]"
+                    />
                   </div>
 
                   <div className="flex-1 min-w-0 space-y-1.5">

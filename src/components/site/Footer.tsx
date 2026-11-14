@@ -11,13 +11,11 @@ export default function Footer() {
         {/* Brand identity */}
         <div className="flex flex-col gap-2 max-w-sm">
           <Link href="/" className="flex items-center gap-2.5 group">
-            <svg
-              className="w-5 h-5 text-[#FF5500] transform group-hover:rotate-45 transition-transform duration-300 shadow-[0_0_10px_#FF5500]"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
-              <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
-            </svg>
+            <img
+              src="/octomem_logo.png"
+              alt="OCTOMEM Logo"
+              className="w-6 h-6 sm:w-7 sm:h-7 object-contain filter drop-shadow-[0_0_10px_rgba(255,85,0,0.5)] group-hover:scale-105 transition-transform duration-300"
+            />
             <span className="font-semibold text-white text-base tracking-wider font-orbitron">
               OCTOMEM
             </span>
@@ -44,6 +42,9 @@ export default function Footer() {
           <a href="#faq" className="hover:text-[#FF5500] transition-colors">
             FAQ
           </a>
+          <Link href="/loading-demo" className="hover:text-[#FF5500] transition-colors">
+            Loading Lab
+          </Link>
           <Link href="/studio" className="text-[#FF5500] hover:text-white transition-colors font-semibold">
             Launch Studio ↗
           </Link>
